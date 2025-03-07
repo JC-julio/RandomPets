@@ -1,0 +1,8 @@
+<div class="columns-3 md:columns-4 lg:columns-5 gap-4 p-4">
+  @for (item of catUrl; track catUrl) {
+  <div class="mb-4 break-inside-avoid">
+    <img [src]="item" alt="Gato fofo"
+      class="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy" />
+  </div>
+  }
+</div>
