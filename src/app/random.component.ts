@@ -3,10 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import PetsService from './random.service';
 import { Pets } from './entities';
 import { provideHttpClient } from '@angular/common/http';
+import { NavComponent } from "./modules/components/nav/nav.component";
+import { SidebarComponent } from './modules/components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NavComponent, SidebarComponent],
   templateUrl: './random.component.html',
 })
 export class AppComponent {
